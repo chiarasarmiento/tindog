@@ -1,0 +1,91 @@
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.gradient-background {
+  background: linear-gradient(-45deg, #79155B, #C23373, #F6635C, #FFBA86);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 100px;
+}
+
+.nav-link{
+  color: #fff;
+}
+.nav-link:hover{
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-link:focus{
+  font-weight: bold;
+  color: #000;
+}
+
+.bnr_info{
+  color: #fff;
+}
+
+#testimonial{
+  background-color: #C23373;
+}
+ 
+ 
+.carousel {
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer{
+  color: #fff;
+}
+    
+
+@media (max-width: 1028px)  {
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    height: 400px;
+  }
+}
